@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us | MakeOver{% endblock title %}
+
+{% block body %}
+
+<!--message block-->
+<div class="container">
+    <div class="message">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+</div>
+</div>
+<!--ContactUS-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact_left">
+                <h1>Contact Us</h1>
+                <p><i class="fa-solid fa-location-dot"></i> Lucknow, Uttar Pradesh</p>
+                <p><i class="fa-solid fa-envelope"></i> info@makeover.com</p>
+                <p><i class="fa-solid fa-phone"></i> 90XXXXXXXX</p>
+                <div class="social_icon">
+                    <h2>Follow Us</h2>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact_right">
+                <form method="post" action="/contact">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Your name" required class="textarea">
+                    <input type="email" name="email" placeholder="Your email" required class="textarea">
+                    <textarea name="message" rows="6" placeholder="Enter your message!" class="textarea"></textarea>
+                    <button type="submit" class="btn btn_2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

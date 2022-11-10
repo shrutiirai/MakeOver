@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}MakeOver | Best Makeup Services Provider of India.{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Embrace your elegance and become the most exquisite you.</h1>
+    <div class="searchBar">
+        <form>
+            <div class="searchInput">
+                <label>Search</label>
+                <input type="text" placeholder="What you looking for?">
+            </div>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+</div>
+</div>
+<div class="container">
+<h2 class="subTitle">SERVICES</h2>
+<div class="makeOver">
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/makeover1.jpg'%}">
+        <span>
+            <h3>Nail Art</h3>
+            <p>Start @ $150</p>
+        </span>
+    </div>
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/makeover2.jpg'%}">
+        <span>
+            <h3>Party Makeup</h3>
+            <p>Start @ $350</p>
+        </span>
+    </div>
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/makeover3.jpg'%}">
+        <span>
+            <h3>Bridle Makeup</h3>
+            <p>Start @ $450</p>
+        </span>
+    </div>
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/makeover4.jpg'%}">
+        <span>
+            <h3>Nude Makeup</h3>
+            <p>Start @ $250</p>
+        </span>
+    </div>
+</div>
+<hr>
+<h2 class="subTitle">CLIENTS</h2>
+<div class="makeOver">
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/client1.jpg'%}">
+        <span>
+            <h3>Alia</h3>
+            <p>It is amazing.I loved it.Best Service, Go for it.</p>
+        </span>
+    </div>
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/client2.jpg'%}">
+        <span>
+            <h3>Deepika</h3>
+            <p>It is amazing.I loved it.Best Service, Go for it.</p>
+        </span>
+    </div>
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/client3.jpg'%}">
+        <span>
+            <h3>Anshi</h3>
+            <p>It is amazing.I loved it.Best Service, Go for it.</p>
+        </span>
+    </div>
+    <div>
+        {% load static %}
+        <img src="{%static 'Image/client4.jpg'%}">
+        <span>
+            <h3>Sanjana</h3>
+            <p>It is amazing.I loved it.Best Service, Go for it.</p>
+        </span>
+    </div>
+</div>
+</div>
+
+
+{% endblock body %}

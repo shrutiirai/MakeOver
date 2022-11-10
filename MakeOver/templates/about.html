@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us | MakeOver{% endblock title %}
+
+{% block body %}
+
+<!--About Us-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about_col_1">
+                {% load static%}
+                <img src="{% static 'Image/logos/logo.jpg' %}" alt="MakeOver_logo">
+            </div>
+            <div class="about_col_2">
+                <h1 class="sub_title">About Us</h1>
+                <p>We are a fashion destination for the contemporary Indian who seeks authentic brand experiences.</p>
+                <p>Committed to creating a highly personalised fashion experience, we have a range of apparel, footwear, accessories, beauty and skincare products to cater to the various needs of our customers. It may be oft repeated, but we do have something for everyone!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

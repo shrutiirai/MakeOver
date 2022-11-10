@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'Image/logos/logo.jpg'%}">
+    <script src="https://kit.fontawesome.com/ef005ac5af.js" crossorigin="anonymous"></script>
+    <title> {% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+    <div class="header">
+        <nav>
+            {% load static %}
+            <a href="/"><img src="{%static 'Image/logos/MakeOverLogo.png'%}" alt="MakeOverLogo" class="logo"></a>
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+            <a href="/login" class="loginBtn">Log In</a>
+        </nav>
+   
+{% block body %}
+
+{% endblock body %}
+
+<!--Copyright-->
+<div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> MakeOver. Made with <i class="fa-solid fa-heart"></i> in India</p>
+</div>
+
+<!--Scripts-->
+{%load static%}
+<script src="{%static 'javascript.js'%}"></script>
+
+</body>
+</html>

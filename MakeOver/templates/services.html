@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Services | MakeOver{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <h2 class="subTitle">SERVICES</h2>
+    <div class="makeOver">
+        <div>
+            {% load static %}
+            <img src="{%static 'Image/makeover1.jpg'%}">
+            <span>
+                <h3>Nail Art</h3>
+                <p>Start @ $150</p>
+            </span>
+        </div>
+        <div>
+            {% load static %}
+            <img src="{%static 'Image/makeover2.jpg'%}">
+            <span>
+                <h3>Party Makeup</h3>
+                <p>Start @ $350</p>
+            </span>
+        </div>
+        <div>
+            {% load static %}
+            <img src="{%static 'Image/makeover3.jpg'%}">
+            <span>
+                <h3>Bridle Makeup</h3>
+                <p>Start @ $450</p>
+            </span>
+        </div>
+        <div>
+            {% load static %}
+            <img src="{%static 'Image/makeover4.jpg'%}">
+            <span>
+                <h3>Nude Makeup</h3>
+                <p>Start @ $250</p>
+            </span>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
